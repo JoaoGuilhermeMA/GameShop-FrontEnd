@@ -1,6 +1,12 @@
 #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: #1f1f1f;
+    z-index: 1000;
 }
+
 
 .name {
     font-size: 35px;
@@ -72,9 +78,11 @@
 .navegacao {
     background-color: #ffffff;
     width: 100%;
+    position: fixed;
+    top: 90px;
     padding: 3px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    position: fixed;
+    z-index: 999;
 }
 
 .lista {
@@ -91,6 +99,11 @@
     font-size: 19px;
     font-weight: 370;
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
 
 .dropdown-toggle {
     font-weight: 400 !important;
