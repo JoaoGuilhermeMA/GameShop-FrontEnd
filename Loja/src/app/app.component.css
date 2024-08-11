@@ -1,0 +1,4 @@
+.corpo {
+    min-height: 100vh; /* Garante que o fundo cubra toda a altura da página */
+    background-color: #f4f4f4; /* Cor cinza para o div 'corpo' */
+}
