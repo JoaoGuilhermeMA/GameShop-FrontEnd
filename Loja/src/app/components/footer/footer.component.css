@@ -1,0 +1,23 @@
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem; /* Espaço entre as seções */
+  }
+
+  .sobre {
+    margin-left: 20px;
+  }
+
+  .entrega {
+    margin-right: 20px;
+  }
+  
+  .sedex {
+    width: 40px;
+    height: 40px;
+  }
+  
