@@ -1,0 +1,22 @@
+.imagens {
+    position: relative;
+    width: 60em; 
+    height: 30em;
+    left: 25%; 
+    top: 180px;
+}
+
+.imagens img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.imagens img.active {
+    opacity: 1;
+}

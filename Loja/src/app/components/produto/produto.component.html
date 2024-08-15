@@ -1,14 +1,49 @@
 <main>
-    <div class="card produto-card">
-        <img src="assets/poke.jpg" alt="">
-        <span class="barra"></span>
-        <div class="card-body text-center">
-            <p class="card-title">{{nome}}</p>
-            <h5 class="card-price">{{preco}}</h5>
-            <p class="card-text">10x de R$39,99 sem juros</p>
-            <div class="comprar">
-                <button>comprar</button>
-            </div>
+    <div class="jogos">
+        <div class="content">
+            <h3>PC GAMER</h3>
+            <p>Confira nossos jogos</p>
+        </div>
+        <div class="linhas">
+            <span class="linha"></span>
+            <span class="linhacinza"></span>
+        </div>
+        <div class="content">
+            <h3>PlayStation</h3>
+            <p>Confira nossos jogos</p>
+        </div>
+        <div class="linhas">
+            <span class="linha"></span>
+            <span class="linhacinza"></span>
+        </div>
+        <div class="content">
+            <h3>Xbox</h3>
+            <p class="xbox">Confira nossos jogos</p>
+        </div>
+        <div class="linhas">
+            <span class="linhaX"></span>
+            <span class="linhacinzaX"></span>
+        </div>
+        <div class="content">
+            <h3>Nitendo</h3>
+            <p class="nitendo">Confira nossos jogos</p>
+        </div>
+        <div class="linhas">
+            <span class="linhaN"></span>
+            <span class="linhacinzaN"></span>
         </div>
     </div>
+        <div class="card produto-card">
+            <img class="img-jogos" src="assets/poke.jpg" >
+            <span class="barra"></span>
+            <div class="card-body text-center">
+                <p class="card-title">{{nome}}</p>
+                <h5 class="card-price">{{preco}}</h5>
+                <p class="card-text">10x de R$39,99 sem juros</p>
+                <div class="comprar">
+                    <input type="number" class="quantidade" min="1" value="1">
+                    <button>comprar</button>
+                </div>
+            </div>
+        </div>
 </main>

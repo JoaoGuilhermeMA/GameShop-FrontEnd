@@ -1,17 +1,102 @@
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 41em;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.jogos h3 {
+    margin-right: 10px; 
+    margin-bottom: 0; 
+}
+
+.jogos p {
+    margin-top: 10px; 
+    margin-bottom: 0; 
+}
+
+.linhas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0em;
+    padding-bottom: 5px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.linha {
+    display: block;
+    margin-left: 3em;
+    height: 4px; 
+    width: 140px; 
+    background-color: #000;
+}
+
+.linhacinza {
+    display: block;
+    margin-right: 50px;
+    height: 2px; 
+    width: 50.7em; 
+    background-color: #ccc; 
+}
+
+.jogos .xbox{
+    margin-right: 78px;   
+}
+
+.linhaX {
+    display: block;
+    margin-left: 3em;
+    height: 4px; 
+    width: 70px; 
+    background-color: #000;
+}
+
+.linhacinzaX {
+    display: block;
+    margin-right: 50px;
+    height: 2px; 
+    width: 55.2em; 
+    background-color: #ccc; 
+}
+
+.jogos .nitendo{
+    margin-right: 43px; 
+}
+
+.linhaN {
+    display: block;
+    margin-left: 2.8em;
+    height: 4px; 
+    width: 105px; 
+    background-color: #000;
+}
+
+.linhacinzaN {
+    display: block;
+    margin-right: 50px;
+    height: 2px; 
+    width: 53em; 
+    background-color: #ccc; 
+}
+
 .produto-card {
     width: 250px; 
     margin: 20px auto; 
     border-radius: 10px; 
     text-align: center;
     position: relative;
+    overflow: hidden; 
 }
 
-.produto-card:hover{
+.produto-card:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
-
-img {
+.img-jogos {
     display: block;
     margin-top: 10px;
     width: 100%;
@@ -47,10 +132,16 @@ img {
 }
 
 .card-text {
+    margin-top: 10px;
     font-size: 12px;
     color: #666;
+    margin-bottom: 30px;
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s; 
+    transform: translateY(0); 
 }
-
 
 .comprar {
     position: absolute;
@@ -58,9 +149,13 @@ img {
     left: 50%;
     transform: translateX(-50%);
     width: calc(100% - 20px); 
+    display: flex; 
+    justify-content: center; 
+    gap: 10px; 
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s, visibility 0.3s; 
+    z-index: 2; 
 }
 
 .produto-card:hover .comprar {
@@ -68,12 +163,20 @@ img {
     visibility: visible;
 }
 
-.produto-card:hover .card-text{
-    opacity: 1;
-    visibility: visible;
-    margin-bottom: 50px;
+.produto-card:hover .card-text {
+    opacity: 0; 
+    visibility: hidden;
+    transform: translateY(30px); 
 }
 
+.quantidade {
+    width: 60px; 
+    padding: 5px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    text-align: center; 
+}
 
 button {
     background-color: #007bff; 
@@ -86,6 +189,8 @@ button {
     transition: background-color 0.3s; 
     display: inline-block; 
     width: auto; 
+    position: relative;
+    z-index: 3; 
 }
 
 button:hover {
