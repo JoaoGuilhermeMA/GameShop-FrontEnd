@@ -1,124 +1,111 @@
-.container{
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px;
-
-}
-label{
-    display: block;
-    margin-bottom: 5px;
-    font-size: 14px;
-    color: #333;
-}
-.input-wrapper{
-    position: relative;
-    margin-bottom: 20px;
-}
-.icon{
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translate(-50%);
-    color: #999;
-}
-input[type="text"]{
-    width: 100%;
-    padding: 10px 10px 10px 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 14px;
-}
-.button-group{
-    display: flex;
-    justify-content: space-between;
-
-}
-.btn{
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    font-size: 14px;
-    cursor: pointer;
-}
-.btn-secondary{
-    background-color: #f0f0f0;
-    color: #333;
-}
-.btn-primary{
-    background-color: #a4c7e9;
-    color: #fff;
-}
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
+  font-family: 'Roboto', sans-serif; /* Fonte moderna */
+  background-image: url("/assets/cadastro-assets/background-body.jpg");
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .container {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    box-sizing: border-box;
+  background: linear-gradient(to bottom, #ffffff, #e0e0e0); /* Gradiente de branco para cinza */
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 450px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 14px;
-    color: #333;
+h2 {
+  text-align: center;
+  font-weight: bold; /* Adiciona negrito ao título */
+}
+
+.form-container {
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group.half-width {
+  width: 48%;
 }
 
 .input-wrapper {
-    position: relative;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .icon {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #999;
+  width: 24px; /* Ajuste o tamanho do ícone conforme necessário */
+  margin-right: 10px; /* Espaçamento entre o ícone e o input */
+  filter: grayscale(100%) brightness(100%) sepia(100%) hue-rotate(0deg) saturate(100%); /* Ajuste os filtros conforme necessário */
 }
 
-input[type="text"] {
-    width: 100%;
-    padding: 10px 10px 10px 30px; 
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 14px;
-    box-sizing: border-box;
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid gray;
+  background-color: black;
+  color: #ffffff;
+  box-sizing: border-box;
+  margin-bottom: 10px; /* Espaçamento entre inputs */
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-size: 12px;
 }
 
-.button-group {
-    display: flex;
-    justify-content: space-between;
+input:focus {
+  border-color: deepskyblue; /* Cor da borda ao clicar */
+  outline: none;
+  box-shadow: 0 0 5px deepskyblue; /* Sombra ao clicar */
 }
 
-.btn {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    font-size: 14px;
-    cursor: pointer;
+button {
+  background-color: deepskyblue;
+  color: black;
+  padding: 13px 40px; /* Ajusta o tamanho do botão */
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 15px auto 0; /* Centraliza o botão horizontalmente */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra do botão */
+  transition: background-color 0.3s, box-shadow 0.3s;
+  font-size: 14px; /* Diminui o tamanho do texto no botão */
+  display: block; /* Faz o botão se comportar como um bloco */
 }
 
-.btn-secondary {
-    background-color: #f0f0f0;
-    color: #333;
+button:hover {
+  background-color: dodgerblue; /* Cor do botão ao passar o mouse */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Sombra mais intensa ao passar o mouse */
 }
 
-.btn-primary {
-    background-color: #a4c7e9;
-    color: #fff;
+.change-method {
+  display: block;
+  text-align: center;
+  margin-top: 15px; /* Espaço acima do link */
+  color: #000000;
+}
+
+.change-method a {
+  color: #333333;
+  text-decoration: none; /* Remove sublinhado */
+  font-weight: bold;
+}
+
+.change-method a:hover {
+  color: #306a79;
+  /* Cor ao passar o mouse */
 }

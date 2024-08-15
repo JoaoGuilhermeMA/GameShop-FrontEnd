@@ -1,12 +1,21 @@
-<div class="container-login">
-  <div class="container-form">
-    <input type="text" placeholder="Email, cpf ou cnpj" />
-    <input type="password" placeholder="Senha" />
-    <button class="login-button">Entrar</button>
-    <label>Esqueceu a senha?</label>
-    <a href="" class="esqueci-a-senha">Recuperar senha</a>
-    <div class="login-options">
-      <button class="register-button">Registre-se</button>
+<body>
+<h2>Login</h2>
+<div class="container">
+  <form class="form-container">
+    <div class="form-group">
+      <div class="input-wrapper">
+        <img src="./assets/cadastro-assets/envelope-fill.svg" class="icon" alt="Envelope Icon">
+        <input type="email" id="email" name="email" placeholder="Email" required>
+      </div>
     </div>
-  </div>
+    <div class="form-group">
+      <div class="input-wrapper">
+        <img src="./assets/cadastro-assets/file-lock2-fill.svg" class="icon" alt="Lock Icon">
+        <input type="password" id="password" name="password" placeholder="Senha" required>
+      </div>
+    </div>
+    <button type="submit">Login</button>
+    <p class="change-method">Não tem uma conta? <a href="#">Faça cadastro</a></p>
+  </form>
 </div>
+</body>

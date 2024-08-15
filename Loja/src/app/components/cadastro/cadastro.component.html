@@ -1,17 +1,41 @@
-
-    <div class="container">
-        <label for="input-field">Email, CPF ou CNPJ*</label>
-        <div class="input-wrapper">
-            <span class="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
-                </svg>
-            </span>
-            <input type="text" id="input-field" placeholder="Email, CPF ou CNPJ">
-        </div>
-        <div class="button-group">
-            <button class="btn btn-secondary">Voltar</button>
-            <button class="btn btn-primary">Cadastrar</button>
-        </div>
+<body>
+<h2>Cadastro</h2>
+<div class="container">
+  <form class="form-container">
+    <div class="form-group">
+      <div class="input-wrapper">
+        <img src="./assets/cadastro-assets/envelope-fill.svg" class="icon" alt="Envelope Icon">
+        <input type="email" id="email" name="email" placeholder="Email" required>
+      </div>
     </div>
-
+    <div class="form-group">
+      <div class="input-wrapper">
+        <img src="./assets/cadastro-assets/file-lock2-fill.svg" class="icon" alt="Lock Icon">
+        <input type="password" id="password" name="password" placeholder="Senha" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="input-wrapper">
+        <img src="./assets/cadastro-assets/person-fill.svg" class="icon" alt="Person Icon">
+        <input type="text" id="firstName" name="firstName" placeholder="Nome" required>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group half-width">
+        <div class="input-wrapper">
+          <img src="./assets/cadastro-assets/geo-alt-fill.svg" class="icon" alt="Location Icon">
+          <input type="text" id="address" name="address" placeholder="Endereço" required>
+        </div>
+      </div>
+      <div class="form-group half-width">
+        <div class="input-wrapper">
+          <img src="./assets/cadastro-assets/phone-fill.svg" class="icon" alt="Phone Icon">
+          <input type="text" id="tel" name="tel" placeholder="Telefone" required>
+        </div>
+      </div>
+    </div>
+    <button type="submit">Cadastrar</button>
+    <p class="change-method">Já tem uma conta? <a href="#">Faça login</a></p>
+  </form>
+</div>
+</body>
