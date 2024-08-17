@@ -1,0 +1,36 @@
+.imagens {
+    position: relative;
+    width: 80vw;
+    max-width: 60em;
+    height: 40vw; 
+    max-height: 30em; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    top: 180px;
+    border-radius: 15px; 
+    overflow: hidden; 
+    z-index: 1; 
+}
+
+.imagens img {
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    width: 100%; /* Faz a imagem cobrir todo o contêiner */
+    height: 180%; /* Faz a imagem cobrir todo o contêiner */
+    object-fit: cover; /* Garante que a imagem cubra o contêiner */
+    transform: translate(-50%, -50%); /* Ajusta a imagem para o centro do contêiner */
+    opacity: 0; /* Imagem invisível por padrão */
+    transition: opacity 1s ease-in-out; /* Transição suave para visibilidade */
+}
+
+.imagens img.active {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .imagens {
+        width: 90vw; 
+        height: 50vw; 
+    }
+}

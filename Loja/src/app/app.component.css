@@ -1,13 +1,7 @@
-.corpo {
-    min-height: 100vh; 
-    background-color: #f4f4f4; 
-}
-
-app-header {
-    z-index: 2; 
-}
-
+app-carrossel,
 app-produto {
-    z-index: 1; 
-    top: 20%;
+    display: block; 
+    width: 100%; 
+    position: relative; 
+    margin-bottom: 30em;
 }
