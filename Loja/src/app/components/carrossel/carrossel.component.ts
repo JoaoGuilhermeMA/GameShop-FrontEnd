@@ -20,7 +20,7 @@ export class CarrosselComponent implements OnInit{
       }
 
       images[currentIndex].classList.add('active');
-      setInterval(showNextImage, 5000);
+      setInterval(showNextImage, 5500);
     }
   }
 }
