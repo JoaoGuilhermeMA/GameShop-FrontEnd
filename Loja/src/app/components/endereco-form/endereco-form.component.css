@@ -1,0 +1,101 @@
+/* Estilização do corpo */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("/assets/cadastro-assets/background-body.jpg");
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilização do container do formulário */
+.container {
+    background: linear-gradient(to bottom, #ffffff, #e0e0e0);
+    padding: 20px;
+    border-radius: 20px;
+    width: 500px;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilização do título */
+h2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Estilização do formulário */
+.form-container {
+    width: 100%;
+}
+
+/* Estilização dos grupos de campos */
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Estilização para campos menores lado a lado */
+.form-group.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group.row.form-group {
+    width: 48%;
+}
+
+/* Ajuste específico para o campo Número */
+#numero {
+    width: 100%;
+}
+
+/* Estilização dos campos de entrada */
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    background-color: black;
+    color: #ffffff;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-size: 14px;
+}
+
+/* Estilização dos campos de entrada em foco */
+input:focus,
+select:focus {
+    border-color: deepskyblue;
+    outline: none;
+}
+
+/* Estilização do botão principal */
+button {
+    background-color: deepskyblue;
+    color: black;
+    padding: 13px 40px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 15px auto 0;
+    transition: transform 0.3s ease;
+    font-size: 16px;
+    display: block;
+}
+
+/* Efeito de zoom no botão ao passar o mouse */
+button:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,51 @@
+<body>
+<div class="form-container">
+    <h2>Cadastro de Console</h2>
+    <div class="header-buttons">
+      <button class="cancel-button">Cancelar</button>
+      <button class="save-button">Salvar Console</button>
+    </div>
+  <form>
+    <div class="form-group">
+      <label for="name">Nome</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="description">Descrição</label>
+      <textarea id="description" name="description" required></textarea>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="category">Categoria</label>
+        <select id="category" name="category" required>
+          <option value="" disabled selected>Selecione a categoria</option>
+          <!-- Opções de categoria -->
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="price">Preço</label>
+        <input type="number" id="price" name="price" step="0.01" required>
+      </div>
+
+      <div class="form-group">
+        <label for="code">Código</label>
+        <input type="text" id="code" name="code" required>
+      </div>
+    </div>
+
+    <div class="image-upload-section">
+      <label for="image-upload" class="image-upload-label">Adicionar Imagem</label>
+      <input type="file" id="image-upload" name="image-upload" accept="image/*">
+      <div class="image-preview">
+        <!-- Divs pré-prontas para mostrar imagens após salvá-las no backend -->
+        <div class="image-placeholder"></div>
+        <div class="image-placeholder"></div>
+        <div class="image-placeholder"></div>
+      </div>
+    </div>
+  </form>
+</div>
+</body>

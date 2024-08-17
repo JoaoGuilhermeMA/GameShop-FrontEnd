@@ -1,3 +1,4 @@
+/* Definindo o estilo geral do corpo */
 body {
   font-family: 'Roboto', sans-serif; /* Fonte moderna */
   background-image: url("/assets/cadastro-assets/background-body.jpg");
@@ -9,6 +10,7 @@ body {
   margin: 0;
 }
 
+/* Estilo do container do formulário */
 .container {
   background: linear-gradient(to bottom, #ffffff, #e0e0e0); /* Gradiente de branco para cinza */
   padding: 20px;
@@ -21,39 +23,47 @@ body {
   justify-content: center;
 }
 
+/* Estilo do título */
 h2 {
   text-align: center;
   font-weight: bold; /* Adiciona negrito ao título */
 }
 
+/* Estilo do formulário */
 .form-container {
   padding: 20px;
 }
 
+/* Estilo dos grupos de campos */
 .form-group {
   margin-bottom: 15px;
 }
 
+/* Estilo das linhas de campos lado a lado */
 .form-row {
   display: flex;
   justify-content: space-between;
 }
 
+/* Estilo dos grupos de campos com largura metade */
 .form-group.half-width {
   width: 48%;
 }
 
+/* Estilo do contêiner de entrada */
 .input-wrapper {
   display: flex;
   align-items: center;
 }
 
+/* Estilo dos ícones */
 .icon {
   width: 24px; /* Ajuste o tamanho do ícone conforme necessário */
   margin-right: 10px; /* Espaçamento entre o ícone e o input */
   filter: grayscale(100%) brightness(100%) sepia(100%) hue-rotate(0deg) saturate(100%); /* Ajuste os filtros conforme necessário */
 }
 
+/* Estilo dos campos de entrada */
 input {
   width: 100%;
   padding: 12px;
@@ -67,12 +77,14 @@ input {
   font-size: 12px;
 }
 
+/* Estilo dos campos de entrada em foco */
 input:focus {
   border-color: deepskyblue; /* Cor da borda ao clicar */
   outline: none;
   box-shadow: 0 0 5px deepskyblue; /* Sombra ao clicar */
 }
 
+/* Estilo do botão principal */
 button {
   background-color: deepskyblue;
   color: black;
@@ -83,15 +95,17 @@ button {
   margin: 15px auto 0; /* Centraliza o botão horizontalmente */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra do botão */
   transition: background-color 0.3s, box-shadow 0.3s;
-  font-size: 14px; /* Diminui o tamanho do texto no botão */
+  font-size: 14px; /* Tamanho do texto no botão */
   display: block; /* Faz o botão se comportar como um bloco */
 }
 
+/* Estilo do botão ao passar o mouse */
 button:hover {
   background-color: dodgerblue; /* Cor do botão ao passar o mouse */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Sombra mais intensa ao passar o mouse */
 }
 
+/* Estilo do parágrafo que contém o link de login */
 .change-method {
   display: block;
   text-align: center;
@@ -99,13 +113,21 @@ button:hover {
   color: #000000;
 }
 
+/* Estilo do link de login */
 .change-method a {
   color: #333333;
   text-decoration: none; /* Remove sublinhado */
   font-weight: bold;
 }
 
+/* Estilo do link ao passar o mouse */
 .change-method a:hover {
-  color: #306a79;
-  /* Cor ao passar o mouse */
+  color: #306a79; /* Cor ao passar o mouse */
 }
+
+/* Estilo para ocultar elementos */
+.hidden {
+  display: none;
+}
+
+
