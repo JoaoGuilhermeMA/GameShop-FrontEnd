@@ -1,101 +1,143 @@
 /* Estilização do corpo */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-image: url("/assets/cadastro-assets/background-body.jpg");
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-image: url("/assets/adress-assets/background-adress-form.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
-/* Estilização do container do formulário */
+/* Estilização do container do formulário com efeito de vidro */
 .container {
-    background: linear-gradient(to bottom, #ffffff, #e0e0e0);
-    padding: 20px;
-    border-radius: 20px;
-    width: 500px;
-    color: black;
-    display: flex;
-    justify-content: center;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 50px;
+  width: 500px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 8px 32px 0 rgba(18, 30, 202, 0.37);
 }
 
 /* Estilização do título */
 h2 {
-    text-align: center;
-    font-weight: bold;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
 /* Estilização do formulário */
 .form-container {
-    width: 100%;
+  width: 100%;
 }
 
 /* Estilização dos grupos de campos */
 .form-group {
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .label {
-    margin-bottom: 5px;
-    font-size: 14px;
-    color: #333;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
 }
 
 /* Estilização para campos menores lado a lado */
 .form-group.row {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
 }
 
-.form-group.row.form-group {
-    width: 48%;
+.input-wrapper {
+  width: 48%;
 }
 
-/* Ajuste específico para o campo Número */
-#numero {
-    width: 100%;
+.input-wrapper input,
+.input-wrapper select {
+  width: 100%;
+}
+
+/* Ajuste para o input de rua */
+.form-group.full-width {
+  width: 100%;
 }
 
 /* Estilização dos campos de entrada */
 input,
 select {
-    width: 100%;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid gray;
-    background-color: black;
-    color: #ffffff;
-    box-sizing: border-box;
-    transition: border-color 0.3s, box-shadow 0.3s;
-    font-size: 14px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #989898;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-size: 14px;
+  width: 100%;
 }
 
 /* Estilização dos campos de entrada em foco */
 input:focus,
 select:focus {
-    border-color: deepskyblue;
-    outline: none;
+  border-color: deepskyblue;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 191, 255, 0.3);
 }
 
-/* Estilização do botão principal */
-button {
-    background-color: deepskyblue;
-    color: black;
-    padding: 13px 40px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    margin: 15px auto 0;
-    transition: transform 0.3s ease;
-    font-size: 16px;
-    display: block;
+/* Estilização para o container de botões */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 100%;
 }
 
-/* Efeito de zoom no botão ao passar o mouse */
-button:hover {
-    transform: scale(1.1);
+/* Estilização comum para os botões */
+.btn {
+  padding: 13px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Estilização específica para o botão de cadastrar */
+.btn-cadastrar {
+  background-color: deepskyblue;
+  color: white;
+}
+
+/* Estilização específica para o botão de voltar */
+.btn-voltar {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+/* Efeito de zoom nos botões ao passar o mouse */
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-cadastrar:hover {
+  background-color: #00a0e4;
+}
+
+.btn-voltar:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.icon-input {
+  width: 15px;
+  margin-right: 5px;
+  margin-bottom: 10px;
 }
