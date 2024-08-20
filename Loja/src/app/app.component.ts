@@ -10,6 +10,7 @@ import {JogoFormComponent} from './components/jogo-form/jogo-form.component';
 import {ConsoleFormComponent} from './components/console-form/console-form.component';
 import {CategoriaFormComponent} from './components/categoria-form/categoria-form.component';
 import {EnderecoFormComponent} from './components/endereco-form/endereco-form.component';
+import { CarrosselComponent } from './components/carrossel/carrossel.component';
 
 
 @Component({
@@ -25,10 +26,13 @@ import {EnderecoFormComponent} from './components/endereco-form/endereco-form.co
     JogoFormComponent,
     CategoriaFormComponent,
     ConsoleFormComponent,
-    EnderecoFormComponent],
+    EnderecoFormComponent, 
+    CarrosselComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'] 
 })
+
+
 export class AppComponent {
 }
 
