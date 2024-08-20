@@ -1,9 +1,13 @@
 import { Component, AfterViewInit, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
+  imports: [
+    RouterModule  // Adiciona o RouterModule aqui
+  ],
   templateUrl: './header.component.html', 
   styleUrls: ['./header.component.css']
 })

@@ -1,38 +1,18 @@
-import {Component} from '@angular/core';
-import {RouterOutlet} from '@angular/router';
-import {HeaderComponent} from './components/header/header.component';
-import {LoginComponent} from './components/login/login.component';
-import {CadastroComponent} from './components/cadastro/cadastro.component';
-import {ProdutoComponent} from './components/produto/produto.component';
-import {FooterComponent} from './components/footer/footer.component';
-import {AdminComponent} from './components/admin/admin.component';
-import {JogoFormComponent} from './components/jogo-form/jogo-form.component';
-import {ConsoleFormComponent} from './components/console-form/console-form.component';
-import {CategoriaFormComponent} from './components/categoria-form/categoria-form.component';
-import {EnderecoFormComponent} from './components/endereco-form/endereco-form.component';
-import { CarrosselComponent } from './components/carrossel/carrossel.component';
-
+import { Component } from '@angular/core';
+import { RouterOutlet , RouterLink} from '@angular/router';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,
+  imports: [
+    RouterOutlet,
+    RouterLink,
     HeaderComponent,
-    LoginComponent,
-    CadastroComponent,
-    ProdutoComponent,
-    FooterComponent,
-    AdminComponent,
-    JogoFormComponent,
-    CategoriaFormComponent,
-    ConsoleFormComponent,
-    EnderecoFormComponent, 
-    CarrosselComponent],
+    FooterComponent
+  ],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'] 
+  styleUrls: ['./app.component.css']
 })
-
-
-export class AppComponent {
-}
-
+export class AppComponent {}
