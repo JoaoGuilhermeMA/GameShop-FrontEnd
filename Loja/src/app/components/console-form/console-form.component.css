@@ -138,3 +138,6 @@ form .form-group textarea {
   border: 1px solid #ddd;
   border-radius: 4px;
 }
+#image-upload{
+  display: none;
+}
