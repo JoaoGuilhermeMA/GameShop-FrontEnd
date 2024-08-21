@@ -1,133 +1,41 @@
-body {
-  font-family: 'Roboto', sans-serif;
-  /* Fonte moderna */
-  background-image: url("/assets/login-assets/background-login-form.jpg");
-  background-size: cover;
-  color: #fff;
+.login-container {
+  position: relative;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
-  flex-direction: column;
-  /* Permite que o título e o contêiner fiquem empilhados verticalmente */
-}
-
-h2 {
-  color: white;
-  /* Cor branca para o título */
-  margin-bottom: 20px;
-  /* Espaço abaixo do título */
-  font-size: 24px;
-  /* Tamanho do texto */
-  font-weight: bold;
-  /* Deixa o texto em negrito */
-}
-
-.container {
-  box-shadow: 0 8px 32px 0 rgba(18, 30, 202, 0.37);
-  backdrop-filter: blur(50px);
-  -webkit-backdrop-filter: blur(10px);
-  padding: 30px;
-  border-radius: 20px;
-  width: 400px;
-  /* Reduz o tamanho da div principal */
-  color: black;
-  display: flex;
-  flex-direction: column;
-  /* Alinha os elementos verticalmente */
-  align-items: center;
-  /* Centraliza o conteúdo dentro do contêiner */
+  overflow: hidden;
+  margin-top: -270px;
 }
 
 .form-container {
-  padding: 20px;
-  width: 100%;
   display: flex;
-  flex-direction: column;
-  /* Alinha os elementos verticalmente */
-  align-items: center;
-  /* Centraliza o conteúdo dentro do contêiner */
+  position: relative;
+  gap: 1rem;
+  z-index: 2; 
 }
 
-.form-group {
-  margin-bottom: 15px;
+.overlay-image {
+  position: absolute;
+  top: 0; 
+  left: 31em; 
+  width: 51%; 
+  z-index: 3; 
+  border-radius: 10px;
+  transition: transform 1s ease;
 }
 
-.input-wrapper {
-  display: flex;
-  align-items: center;
+
+.login-form, .signup-form {
+  width: 30em;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  position: relative;
+  z-index: 2; /* Garante que as divs de formulário fiquem abaixo da imagem */
 }
 
-.icon {
-  width: 24px;
-  /* Ajuste o tamanho do ícone conforme necessário */
-  margin-right: 10px;
-  /* Espaçamento entre o ícone e o input */
-  filter: grayscale(100%) brightness(100%) sepia(100%) hue-rotate(0deg) saturate(100%);
-  /* Ajuste os filtros conforme necessário */
-}
-
-input {
-  width: 100%;
-  padding: 10px;
-  border-radius: 12px;
-  background-color: black;
-  color: #ffffff;
-  box-sizing: border-box;
-  margin-bottom: 10px;
-  /* Espaçamento entre inputs */
-  transition: border-color 0.3s, box-shadow 0.3s;
-  border: none;
-}
-
-input:focus {
-  border-color: deepskyblue;
-  /* Cor da borda ao clicar */
-  outline: none;
-  box-shadow: 0 0 5px deepskyblue;
-  /* Sombra ao clicar */
-}
-
-button {
-  background-color: deepskyblue;
-  color: black;
-  padding: 12px 50px;
-  /* Aumenta o tamanho do botão */
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  margin-top: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  /* Sombra do botão */
-  transition: background-color 0.3s, box-shadow 0.3s;
-  font-size: 16px;
-  /* Aumenta o tamanho do texto no botão */
-  text-align: center;
-  /* Centraliza o texto no botão */
-}
-
-button:hover {
-  background-color: dodgerblue;
-  /* Cor do botão ao passar o mouse */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-  /* Sombra mais intensa ao passar o mouse */
-}
-
-.change-method {
-  text-align: center;
-  margin-top: 15px;
-  /* Espaço acima do link */
-  color: #999;
-}
-
-.change-method a {
-  color: #999;
-  text-decoration: none;
-  /* Remove sublinhado */
-}
-
-.change-method a:hover {
-  color: deepskyblue;
-  /* Cor ao passar o mouse */
+.signup-form {
+  position: relative; /* Garante que a div de cadastro esteja abaixo da imagem */
 }

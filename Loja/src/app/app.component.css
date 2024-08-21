@@ -1,7 +1,20 @@
-app-carrossel,
-app-produto {
-    display: block; 
-    width: 100%; 
-    position: relative; 
-    margin-bottom: 30em;
+/* styles.css ou app.component.css */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+:host {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+}
+
+main {
+    flex: 1;
+}
+
+app-footer {
+    background-color: #f8f9fa;
 }

@@ -1,21 +1,44 @@
-<body>
-<h2>Login</h2>
-<div class="container">
-  <form class="form-container">
-    <div class="form-group">
-      <div class="input-wrapper">
-        <img src="./assets/cadastro-assets/envelope-fill.svg" class="icon" alt="Envelope Icon">
-        <input type="email" id="email" name="email" placeholder="Email" required>
-      </div>
+<div class="login-container">
+  <div class="form-container">
+    <img 
+    class="overlay-image" 
+    src="../assets/login-assets/background-login-form.jpg" 
+    alt="Overlay Image"
+    (click)="resetImageMargin()"
+  >
+    
+    <div class="login-form card p-4">
+        <h3 class="card-title text-center mb-4">Login</h3>
+        <form>
+            <div class="form-group">
+                <label for="login-email">Email address</label>
+                <input type="email" class="form-control" id="login-email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password</label>
+                <input type="password" class="form-control" id="login-password" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+        </form>
     </div>
-    <div class="form-group">
-      <div class="input-wrapper">
-        <img src="./assets/cadastro-assets/file-lock2-fill.svg" class="icon" alt="Lock Icon">
-        <input type="password" id="password" name="password" placeholder="Senha" required>
-      </div>
+
+    <div class="signup-form card p-4">
+        <h3 class="card-title text-center mb-4">Sign Up</h3>
+        <form>
+            <div class="form-group">
+                <label for="signup-email">Email address</label>
+                <input type="email" class="form-control" id="signup-email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="signup-password">Password</label>
+                <input type="password" class="form-control" id="signup-password" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" class="form-control" id="confirm-password" placeholder="Confirm Password">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+        </form>
     </div>
-    <button type="submit">Login</button>
-    <p class="change-method">Não tem uma conta? <a href="#">Faça cadastro</a></p>
-  </form>
+  </div>
 </div>
-</body>
