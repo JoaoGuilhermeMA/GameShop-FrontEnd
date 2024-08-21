@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet , RouterLink} from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ConsoleFormComponent } from "./components/console-form/console-form.component";
 
 @Component({
   selector: 'app-root',
@@ -10,8 +11,9 @@ import { FooterComponent } from './components/footer/footer.component';
     RouterOutlet,
     RouterLink,
     HeaderComponent,
-    FooterComponent
-  ],
+    FooterComponent,
+    ConsoleFormComponent
+],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

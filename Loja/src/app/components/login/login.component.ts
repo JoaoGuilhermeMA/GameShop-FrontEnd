@@ -1,38 +1,23 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule , RouterModule
+  ],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  // Variável de estado para controlar o deslocamento da imagem
-  private imageOffset: number = 0; // 0 = posição original, 1 = movido para a esquerda, 2 = movido para a direita
+  toggleForms(): void {
+    const loginForm = document.querySelector('.login-form') as HTMLElement;
+    const signupForm = document.querySelector('.signup-form') as HTMLElement;
 
-  // Método para alternar o deslocamento da imagem
-  resetImageMargin(): void {
-    const imageElement = document.querySelector('.overlay-image') as HTMLImageElement;
-    if (imageElement) {
-      switch (this.imageOffset) {
-        case 0:
-          // Move a imagem 31em para a esquerda
-          imageElement.style.transform = 'translateX(-32em)';
-          this.imageOffset = 1; // Atualiza o estado para movido para a esquerda
-          break;
-        case 1:
-          // Move a imagem 31em para a direita
-          imageElement.style.transform = 'translateX(0)';
-          this.imageOffset = 2; // Atualiza o estado para movido para a direita
-          break;
-        case 2:
-          // Move a imagem 31em para a esquerda
-          imageElement.style.transform = 'translateX(-32em)';
-          this.imageOffset = 1; // Atualiza o estado para movido para a esquerda
-          break;
-      }
+    if (loginForm && signupForm) {
+      loginForm.classList.toggle('hidden');
+      signupForm.classList.toggle('flip');
     }
-  }
+  } 
 }
