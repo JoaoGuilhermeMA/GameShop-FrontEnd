@@ -1,0 +1,77 @@
+
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h2 span {
+  font-size: 14px;
+  color: #777;
+}
+
+.compact-container {
+  max-width: 1000px;
+}
+
+.table th, .table td {
+  vertical-align: middle;
+}
+
+.table img {
+  width: 80px;
+  height: auto;
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-light {
+  border: 1px solid #ddd;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border: none;
+  padding: 8px 16px;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+.text-right h4, .text-right h3 {
+  margin-bottom: 8px;
+}
+
+.text-right p {
+  margin-bottom: 4px;
+  font-size: 12px;
+  color: #555;
+}
+
+.form-control-sm {
+  padding: .25rem .5rem;
+  font-size: .875rem;
+  line-height: 1.5;
+  border-radius: .2rem;
+}
+.col-md-6 text-right button h4{
+  font-size: 10px;
+}
+.d-flex justify-content-end{
+  padding: 10px;
+}
+.row label{
+  font-size: 12px;
+}
+.row #cupom{
+  width: 154px;
+  margin: 10px;
+}
+.row #frete{
+  width: 185px;
+  margin: 10px;
+}
