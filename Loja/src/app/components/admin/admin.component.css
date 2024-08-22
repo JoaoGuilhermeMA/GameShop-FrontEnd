@@ -44,7 +44,7 @@ body {
   transition: background-color 0.2s ease, color 0.2s ease, padding 0.2s ease;
 }
 .nav-links li a:hover{
-  background-color: #e7aaa9;
+  background-color: #e8a7a6;
   color: #121212;
   padding: 10px;
   border-radius: 4px;
