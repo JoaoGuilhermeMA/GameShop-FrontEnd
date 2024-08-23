@@ -40,7 +40,7 @@ export class HeaderComponent implements AfterViewInit {
           if (!toggle.matches(':hover') && !menu.matches(':hover')) {
             menu.classList.remove('show');
           }
-        }, 40); 
+        }, 50); 
       };
 
       const handleMouseMove = (event: MouseEvent) => {

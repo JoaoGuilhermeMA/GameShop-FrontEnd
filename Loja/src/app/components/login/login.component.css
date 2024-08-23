@@ -15,27 +15,3 @@
   z-index: 2; 
 }
 
-.overlay-image {
-  position: absolute;
-  top: 0; 
-  left: 31em; 
-  width: 51%; 
-  z-index: 3; 
-  border-radius: 10px;
-  transition: transform 1s ease;
-}
-
-
-.login-form, .signup-form {
-  width: 30em;
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
-  position: relative;
-  z-index: 2; /* Garante que as divs de formulário fiquem abaixo da imagem */
-}
-
-.signup-form {
-  position: relative; /* Garante que a div de cadastro esteja abaixo da imagem */
-}

@@ -14,6 +14,17 @@
     margin-right: -80px;
 }
 
+.name a {
+    text-decoration: none; 
+    border: none; 
+    color: #ffffff;
+}
+
+.name a:hover {
+    color: #e5e0e0;
+}
+
+
 .pesquisa {
     display: flex;
     background-color: #f8f9fa; 
