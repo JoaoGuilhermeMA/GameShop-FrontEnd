@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
-import { NgIf } from '@angular/common';
+import {CommonModule, NgIf} from '@angular/common';
 
 @Component({
   selector: 'app-admin',
   standalone: true,
   imports: [
-    NgIf
+    NgIf,
+    CommonModule
   ],
   templateUrl: './admin.component.html',
   styleUrls: ['./admin.component.css']  // Corrigido para "styleUrls"

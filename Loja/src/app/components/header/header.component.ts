@@ -1,14 +1,15 @@
 import { Component, AfterViewInit, Inject, PLATFORM_ID } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
+import {CommonModule, isPlatformBrowser} from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
   imports: [
-    RouterModule  // Adiciona o RouterModule aqui
+    RouterModule,
+    CommonModule
   ],
-  templateUrl: './header.component.html', 
+  templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
 
@@ -40,7 +41,7 @@ export class HeaderComponent implements AfterViewInit {
           if (!toggle.matches(':hover') && !menu.matches(':hover')) {
             menu.classList.remove('show');
           }
-        }, 50); 
+        }, 50);
       };
 
       const handleMouseMove = (event: MouseEvent) => {

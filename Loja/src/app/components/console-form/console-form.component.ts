@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import {CommonModule} from "@angular/common";
 
 @Component({
   selector: 'app-console-form',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './console-form.component.html',
   styleUrl: './console-form.component.css'
 })
