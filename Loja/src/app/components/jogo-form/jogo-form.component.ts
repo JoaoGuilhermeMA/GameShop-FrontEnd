@@ -9,5 +9,4 @@ import {CommonModule} from "@angular/common";
   styleUrl: './jogo-form.component.css'
 })
 export class JogoFormComponent {
-
 }
