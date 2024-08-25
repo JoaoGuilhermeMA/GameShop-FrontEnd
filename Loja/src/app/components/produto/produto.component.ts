@@ -1,4 +1,4 @@
-import {Component, inject} from '@angular/core';
+import {Component, EventEmitter, inject, Input, Output} from '@angular/core';
 import {Jogo} from "../../models/jogo";
 import {CommonModule} from "@angular/common";
 import {JogoService} from "../../services/jogo.service";
@@ -14,6 +14,9 @@ import {HttpClientModule} from "@angular/common/http";
 export class ProdutoComponent {
   public nome = "Jogo Pokémon Scarlet - Nintendo Switch";
   public preco = "R$399,90";
+
+  @Input("jogo") jogo : Jogo = new Jogo();
+  @Output("retorno") retorno = new EventEmitter<any>();
 
   jogos: Jogo[] = [];
   jogoService = inject(JogoService);
@@ -34,5 +37,11 @@ export class ProdutoComponent {
     })
   }
 
-  protected readonly Jogo = Jogo;
+  ngOnInit() {
+    this.jogoService.jogos$.subscribe({
+      next: jogos => this.jogos = jogos,
+      error: err => console.error('Erro ao atualizar jogos', err)
+    });
+    this.jogoService.updateJogos(); // Carregar os jogos na inicialização
+  }
 }

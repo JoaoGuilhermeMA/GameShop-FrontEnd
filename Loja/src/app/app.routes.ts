@@ -6,15 +6,17 @@ import { LoginComponent } from './components/login/login.component';
 import { EnderecoFormComponent } from './components/endereco-form/endereco-form.component';
 import { CarrinhoComponent } from './components/carrinho/carrinho.component';
 import { JogoFormComponent } from './components/jogo-form/jogo-form.component';
+import {ConsoleFormComponent} from "./components/console-form/console-form.component";
 
 export const routes: Routes = [
   { path: 'produtos', component: ViewProdutoComponent },
   { path: 'cadastro', component: CadastroComponent },
   { path: 'admin', component: AdminComponent },
   { path: 'login', component: LoginComponent},
-  { path: 'endereco', component: EnderecoFormComponent},
+  { path: 'formEndereco', component: EnderecoFormComponent},
+  { path: 'formJogo', component: JogoFormComponent},
+  { path: 'formConsole', component: ConsoleFormComponent},
   { path: 'admin', component: AdminComponent},
   { path: 'carrinho', component: CarrinhoComponent},
-  { path: 'jogos', component: JogoFormComponent},
   { path: '', redirectTo: 'produtos', pathMatch: "full" }
 ];

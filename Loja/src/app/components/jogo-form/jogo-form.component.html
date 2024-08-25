@@ -3,7 +3,7 @@
     <h2>Cadastro de Jogo</h2>
     <div class="header-buttons">
       <button class="cancel-button">Cancelar</button>
-      <button class="save-button">Salvar Jogo</button>
+      <button class="save-button" (click)="save()">Salvar Jogo</button>
     </div>
   </header>
 
@@ -11,13 +11,30 @@
     <div class="form-row">
       <div class="form-group">
         <label for="nome">Nome *</label>
-        <input type="text" id="nome" required>
+        <input type="text" id="nome" [(ngModel)]="jogo.nome" required>
       </div>
 
       <div class="form-group">
         <label for="categoria">Categoria *</label>
-        <select id="categoria" required>
+        <select id="categoria" [(ngModel)]="jogo.categorias" required>
           <option value="" disabled selected>Selecione uma categoria</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-row">
+<!--      <div class="form-group">-->
+<!--        <label for="console">Console *</label>-->
+<!--        <select id="console" required>-->
+<!--          <option value="" disabled selected>Selecione um console</option>-->
+<!--          &lt;!&ndash; Outras opções &ndash;&gt;-->
+<!--        </select>-->
+<!--      </div>-->
+
+      <div class="form-group">
+        <label for="plataforma">Plataforma *</label>
+        <select id="plataforma" [(ngModel)]="jogo.plataformas" required>
+          <option value="" disabled selected>Selecione uma plataforma</option>
           <option value="pcgamer">PCGAMER</option>
           <option value="playstation">PlayStation</option>
           <option value="xbox">Xbox</option>
@@ -26,42 +43,24 @@
       </div>
     </div>
 
-    <div class="form-row">
-      <div class="form-group">
-        <label for="console">Console *</label>
-        <select id="console" required>
-          <option value="" disabled selected>Selecione um console</option>
-          <!-- Outras opções -->
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label for="plataforma">Plataforma *</label>
-        <select id="plataforma" required>
-          <option value="" disabled selected>Selecione uma plataforma</option>
-          <!-- Outras opções -->
-        </select>
-      </div>
-    </div>
-
     <div class="form-group">
       <label for="descricao">Descrição *</label>
-      <textarea id="descricao" required></textarea>
+      <textarea id="descricao" [(ngModel)]="jogo.descricao" required></textarea>
     </div>
 
     <div class="form-group">
       <label for="preco">Preço *</label>
-      <input type="number" id="preco" required>
+      <input type="number" id="preco" [(ngModel)]="jogo.preco" required>
     </div>
 
     <div class="form-group">
       <label for="desconto">Desconto *</label>
-      <input type="number" id="desconto" required>
+      <input type="number" id="desconto" [(ngModel)]="jogo.desconto" required>
     </div>
 
     <div class="form-group switch-group">
       <label class="switch-label" for="disponivel">Disponível</label>
-      <input type="checkbox" id="disponivel">
+      <input type="checkbox" id="disponivel" [(ngModel)]="jogo.deletado">
     </div>
 
     <!-- Seção de upload de imagem e visualização -->
@@ -69,9 +68,6 @@
       <label for="image-upload" class="image-upload-label">Adicionar Imagem</label>
       <input type="file" id="image-upload" name="image-upload" accept="image/*">
       <div class="image-preview">
-        <!-- Divs pré-prontas para mostrar imagens após salvá-las no backend -->
-        <div class="image-placeholder"></div>
-        <div class="image-placeholder"></div>
         <div class="image-placeholder"></div>
       </div>
     </div>
