@@ -6,7 +6,7 @@
     <ul class="nav-links">
       <li><a href="#" (click)="showSection('usuarios')">Listar Usuários</a></li>
       <li><a href="#" (click)="showSection('jogos')">Listar Jogos</a></li>
-      <li><a href="#" (click)="showSection('consoles')">Listar Consoles</a></li>
+      <li><a href="#" (click)="showSection('consoles')">Listar Plataformas</a></li>
       <li><a href="#" (click)="showSection('pedidos')">Listar Pedidos</a></li>
     </ul>
   </nav>
@@ -96,7 +96,7 @@
 
     <!-- Tabela de Consoles -->
     <section class="order-history" *ngIf="activeSection === 'consoles'">
-      <h3>Listar Consoles</h3>
+      <h3>Listar Plataformas</h3>
       <table class="order-table">
         <thead>
         <tr>
