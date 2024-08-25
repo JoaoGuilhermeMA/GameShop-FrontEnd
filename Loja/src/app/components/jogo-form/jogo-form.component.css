@@ -179,3 +179,41 @@ form .switch-group .switch-label {
   border-radius: 4px;
   position: relative;
 }
+
+.scrollable-container {
+  max-height: 400px; 
+  overflow-y: auto;
+}
+
+.checkbox-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 10px; 
+  padding: 10px; 
+  box-sizing: border-box; 
+  height: 100px;
+  overflow-y: auto; 
+}
+
+.checkbox-item {
+  display: inline-flex;
+  align-items: center; 
+}
+
+.check {
+  display: flex; /* Alinha os itens na horizontal */
+  align-items: center; /* Centraliza os itens verticalmente */
+  margin-bottom: 10px; /* Espaçamento entre cada linha de checkboxes */
+}
+
+.check input[type="checkbox"] {
+  transform: scale(1.5); /* Aumenta o tamanho do checkbox */
+  margin-right: 15px; /* Espaçamento entre o checkbox e o texto */
+}
+
+
+
+
+
+
+
