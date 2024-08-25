@@ -3,39 +3,39 @@
         <h3 class="card-title text-center mb-4">Login</h3>
         <form>
             <div class="form-group">
-                <label for="login-email">Email</label>
-                <input type="email" class="form-control" id="login-email">
+                <label for="login-email" class="email">Email</label>
+                <input type="email" class="form-control">
             </div>
             <div class="form-group">
-                <label for="login-password">Senha</label>
-                <input type="password" class="form-control" id="login-password">
+                <label for="login-password" class="senha">Senha</label>
+                <input type="password" class="form-control">
             </div>
             <div class="text-center mt-2">
-                <button type="button" (click)="toggleForms()" class="btn btn-link text-muted">Ainda não tem conta ?</button>
+                <button type="button" (click)="toggleForms()" class="btn btn-link text-muted name">Ainda não tem conta ?</button>
             </div>
-            <button type="submit" class="btn btn-primary btn-block">Login</button>
+            <button type="submit" class="btn btn-primary btn-block botaoLogin">Login</button>
         </form>
     </div>
 
     <div *ngIf="showSignUp" class="signup-form card p-4">
-        <h3 class="card-title text-center mb-4">Sign Up</h3>
+        <h3 class="card-title text-center mb-4">Cadastrar</h3>
         <form>
             <div class="form-group">
-                <label for="signup-email">Email</label>
-                <input type="email" class="form-control" id="signup-email">
+                <label for="signup-email" class="email">Email</label>
+                <input type="email" class="form-control">
             </div>
             <div class="form-group">
-                <label for="signup-password">Senha</label>
-                <input type="password" class="form-control" id="signup-password" >
+                <label for="signup-password" class="senha">Senha</label>
+                <input type="password" class="form-control">
             </div>
             <div class="form-group">
-                <label for="confirm-password">Confirma Senha</label>
-                <input type="password" class="form-control" id="confirm-password" >
+                <label for="confirm-password" class="Csenha">Confirma Senha</label>
+                <input type="password" class="form-control" >
             </div>
             <div class="text-center mt-2">
-                <button type="button" (click)="toggleForms()" class="btn btn-link text-muted">Já tem conta?</button>
+                <button type="button" (click)="toggleForms()" class="btn btn-link text-muted nameConta">Já tem conta?</button>
             </div>
-            <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+            <button type="submit" class="btn btn-primary btn-block">Cadastra</button>
         </form>
     </div>
 </div>
