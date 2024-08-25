@@ -1,1 +1,18 @@
-<p>categoria-form works!</p>
+<div class="form-container">
+  <header>
+    <h2>Cadastro de Jogo</h2>
+    <div class="header-buttons">
+      <button class="cancel-button">Cancelar</button>
+      <button class="save-button" (click)="save()">Salvar Jogo</button>
+    </div>
+  </header>
+
+  <form>
+
+    <div class="form-group">
+      <label for="preco">Preço *</label>
+      <input type="number" id="preco" [(ngModel)]="categoria.categoriasJogo" required>
+    </div>
+
+  </form>
+</div>

@@ -1,32 +1,34 @@
 import {Component, EventEmitter, inject, Input, Output} from '@angular/core';
-import {CommonModule} from "@angular/common";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import Swal from "sweetalert2";
-import {Jogo} from "../../models/jogo";
-import {JogoService} from "../../services/jogo.service";
-import {Router} from "@angular/router";
 import {Categoria} from "../../models/categoria";
 import {CategoriaService} from "../../services/categoria.service";
+import {Router} from "@angular/router";
+import Swal from "sweetalert2";
+import {Plataforma} from "../../models/plataforma";
+import {PlataformaService} from "../../services/plataforma.service";
 
 @Component({
-  selector: 'app-categoria-form',
+  selector: 'app-plataform-form',
   standalone: true,
-    imports: [CommonModule, FormsModule, ReactiveFormsModule],
-  templateUrl: './categoria-form.component.html',
-  styleUrl: './categoria-form.component.css'
+    imports: [
+        FormsModule,
+        ReactiveFormsModule
+    ],
+  templateUrl: './plataform-form.component.html',
+  styleUrl: './plataform-form.component.css'
 })
-export class CategoriaFormComponent {
+export class PlataformFormComponent {
 
-  @Input("categoria") categoria : Categoria = new Categoria();
+  @Input("plataforma") plataforma : Plataforma = new Plataforma();
   @Output("retorno") retorno = new EventEmitter<any>();
 
-  categoriaService = inject(CategoriaService);
+  plataformaService = inject(PlataformaService);
   router = inject(Router);
 
   findById(id: number) {
-    this.categoriaService.findById(id).subscribe({
+    this.plataformaService.findById(id).subscribe({
       next: value => {
-        this.categoria = value;
+        this.plataforma = value;
       },
       error: err => {
         Swal.fire({
@@ -39,16 +41,15 @@ export class CategoriaFormComponent {
     })
   }
   save(){
-
-    this.categoriaService.save(this.categoria).subscribe({
+    this.plataformaService.save(this.plataforma).subscribe({
       next: mensagem => {
         Swal.fire({
           title: mensagem,
           icon: 'success',
           confirmButtonText: ''
         });
-        this.categoriaService.updateJogos();
-        this.router.navigate(['produto']);
+        this.plataformaService.updateJogos();
+        this.router.navigate(['produtos']);
         this.retorno.emit();
       },
       error: err => {
@@ -59,6 +60,6 @@ export class CategoriaFormComponent {
         })
       }
     })
-
   }
+
 }

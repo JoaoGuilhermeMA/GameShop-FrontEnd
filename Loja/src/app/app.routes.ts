@@ -8,6 +8,7 @@ import { CarrinhoComponent } from './components/carrinho/carrinho.component';
 import { JogoFormComponent } from './components/jogo-form/jogo-form.component';
 import {ConsoleFormComponent} from "./components/console-form/console-form.component";
 import { ListaJogosComponent } from './components/lista-jogos/lista-jogos.component';
+import {PlataformFormComponent} from "./components/plataform-form/plataform-form.component";
 
 export const routes: Routes = [
   { path: 'produtos', component: ViewProdutoComponent },
@@ -16,7 +17,7 @@ export const routes: Routes = [
   { path: 'login', component: LoginComponent},
   { path: 'formEndereco', component: EnderecoFormComponent},
   { path: 'formJogo', component: JogoFormComponent},
-  { path: 'formConsole', component: ConsoleFormComponent},
+  { path: 'formPlataforma', component: PlataformFormComponent},
   { path: 'admin', component: AdminComponent},
   { path: 'carrinho', component: CarrinhoComponent},
   { path: 'jogos', component: JogoFormComponent},

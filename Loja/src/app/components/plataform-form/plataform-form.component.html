@@ -1,0 +1,33 @@
+<div class="form-container">
+  <header>
+    <h2>Cadastro de Plataforma</h2>
+    <div class="header-buttons">
+      <button class="cancel-button">Cancelar</button>
+      <button class="save-button" (click)="save()">Salvar Plataforma</button>
+    </div>
+  </header>
+
+  <form>
+
+    <div class="form-group">
+      <label for="nome">Nome *</label>
+      <input type="text" id="nome" name="nome" [(ngModel)]="plataforma.nome" required>
+    </div>
+
+    <div class="form-group">
+      <label for="tipo">Tipo *</label>
+      <input type="text" id="tipo" name="tipo" [(ngModel)]="plataforma.tipo" required>
+    </div>
+
+    <div class="form-group">
+      <label for="parceira">Descreva a parceria *</label>
+      <textarea id="parceira" name="parceira" [(ngModel)]="plataforma.parceira" required></textarea>
+    </div>
+
+    <div class="form-group switch-group">
+      <label class="switch-label" for="disponivel">Disponível</label>
+      <input type="checkbox" id="disponivel" name="disponivel" [(ngModel)]="plataforma.deletado">
+    </div>
+
+  </form>
+</div>
