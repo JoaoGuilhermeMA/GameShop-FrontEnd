@@ -18,6 +18,7 @@
         <label for="categoria">Categoria *</label>
         <select id="categoria" [(ngModel)]="jogo.categorias" required>
           <option value="" disabled selected>Selecione uma categoria</option>
+          <option *ngFor="let categoria of categorias" [value]="categoria.id">{{ categoria.categoriasJogo }}</option>
         </select>
       </div>
     </div>
@@ -35,10 +36,7 @@
         <label for="plataforma">Plataforma *</label>
         <select id="plataforma" [(ngModel)]="jogo.plataformas" required>
           <option value="" disabled selected>Selecione uma plataforma</option>
-          <option value="pcgamer">PCGAMER</option>
-          <option value="playstation">PlayStation</option>
-          <option value="xbox">Xbox</option>
-          <option value="nintendo">Nintendo</option>
+          <option *ngFor="let plataforma of plataformas" [value]="plataforma.id">{{ plataforma.nome }}</option>
         </select>
       </div>
     </div>
