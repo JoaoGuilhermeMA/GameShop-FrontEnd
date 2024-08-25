@@ -16,4 +16,12 @@ export class JogoService {
   findAll() : Observable<Jogo[]>{
     return this.http.get<Jogo[]>(this.API);
   }
+
+  findById (id: number) : Observable<Jogo>{
+    return this.http.get<Jogo>(this.API + id)
+  }
+
+  // save () : {
+  //
+  // }
 }

@@ -8,21 +8,23 @@
             <span class="linha"></span>
             <span class="linhacinza"></span>
         </div>
-        <div class="cards-container">
-            <div class="card produto-card">
-                <img class="img-jogos" src="assets/poke.jpg">
-                <span class="barra"></span>
-                <div class="card-body text-center">
-                    <p class="card-title">{{nome}}</p>
-                    <h5 class="card-price">{{preco}}</h5>
-                    <p class="card-text">10x de R$39,99 sem juros</p>
-                    <div class="comprar">
-                        <input type="number" class="quantidade" min="1" value="1">
-                        <button>comprar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @for (jogo of jogos; track $index){
+          <div class="cards-container">
+              <div class="card produto-card">
+                  <img class="img-jogos" src="assets/poke.jpg">
+                  <span class="barra"></span>
+                  <div class="card-body text-center">
+                      <p class="card-title">{{jogo.nome}}</p>
+                      <h5 class="card-price">{{jogo.preco}}</h5>
+                      <p class="card-text">10x de {{ jogo.preco/10 }} sem juros</p>
+                      <div class="comprar">
+                          <input type="number" class="quantidade" min="1" value="1">
+                          <button>comprar</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        }
         <div class="content">
             <h3>PlayStation</h3>
             <p>Confira nossos jogos</p>
@@ -31,14 +33,15 @@
             <span class="linha"></span>
             <span class="linhacinza"></span>
         </div>
+      @for (jogo of jogos; track $index){
         <div class="cards-container">
             <div class="card produto-card">
                 <img class="img-jogos" src="assets/poke.jpg">
                 <span class="barra"></span>
                 <div class="card-body text-center">
-                    <p class="card-title">{{nome}}</p>
-                    <h5 class="card-price">{{preco}}</h5>
-                    <p class="card-text">10x de R$39,99 sem juros</p>
+                    <p class="card-title">{{jogo.nome}}</p>
+                    <h5 class="card-price">{{jogo.preco}}</h5>
+                    <p class="card-text">10x de {{ jogo.preco/10 }} sem juros</p>
                     <div class="comprar">
                         <input type="number" class="quantidade" min="1" value="1">
                         <button>comprar</button>
@@ -46,6 +49,7 @@
                 </div>
             </div>
         </div>
+      }
         <div class="content">
             <h3>Xbox</h3>
             <p class="xbox">Confira nossos jogos</p>
@@ -54,14 +58,15 @@
             <span class="linhaX"></span>
             <span class="linhacinzaX"></span>
         </div>
+      @for (jogo of jogos; track $index){
         <div class="cards-container">
             <div class="card produto-card">
                 <img class="img-jogos" src="assets/poke.jpg">
                 <span class="barra"></span>
                 <div class="card-body text-center">
-                    <p class="card-title">{{nome}}</p>
-                    <h5 class="card-price">{{preco}}</h5>
-                    <p class="card-text">10x de R$39,99 sem juros</p>
+                    <p class="card-title">{{jogo.nome}}</p>
+                    <h5 class="card-price">{{jogo.preco}}</h5>
+                    <p class="card-text">10x de {{ jogo.preco/10 }} sem juros</p>
                     <div class="comprar">
                         <input type="number" class="quantidade" min="1" value="1">
                         <button>comprar</button>
@@ -69,6 +74,7 @@
                 </div>
             </div>
         </div>
+      }
         <div class="content">
             <h3>Nitendo</h3>
             <p class="nitendo">Confira nossos jogos</p>
@@ -77,14 +83,15 @@
             <span class="linhaN"></span>
             <span class="linhacinzaN"></span>
         </div>
+      @for (jogo of jogos; track $index){
         <div class="cards-container">
             <div class="card produto-card">
                 <img class="img-jogos" src="assets/poke.jpg">
                 <span class="barra"></span>
                 <div class="card-body text-center">
-                    <p class="card-title">{{nome}}</p>
-                    <h5 class="card-price">{{preco}}</h5>
-                    <p class="card-text">10x de R$39,99 sem juros</p>
+                    <p class="card-title">{{jogo.nome}}</p>
+                    <h5 class="card-price">{{jogo.preco}}</h5>
+                    <p class="card-text">10x de {{jogo.preco/10}} sem juros</p>
                     <div class="comprar">
                         <input type="number" class="quantidade" min="1" value="1">
                         <button>comprar</button>
@@ -92,5 +99,6 @@
                 </div>
             </div>
         </div>
+      }
     </div>
 </main>
