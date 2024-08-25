@@ -9,5 +9,5 @@ export const routes: Routes = [
   { path: 'cadastro', component: CadastroComponent },
   { path: 'admin', component: AdminComponent },
   { path: 'login', component: LoginComponent},
-  { path: '', redirectTo: 'login', pathMatch: "full" }
+  { path: '', redirectTo: 'produtos', pathMatch: "full" }
 ];
