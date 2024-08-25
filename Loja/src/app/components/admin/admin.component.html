@@ -4,8 +4,8 @@
       <span>Game Shop</span>
     </div>
     <ul class="nav-links">
-      <li><a href="#" (click)="showSection('usuarios')">Listar Usuários</a></li>
-      <li><a href="#" (click)="showSection('jogos')">Listar Jogos</a></li>
+      <li><a [routerLink]="['/formJogo']">Listar Usuários</a></li>
+      <li><a [routerLink]="['/lista']">Listar Jogos</a></li>
       <li><a href="#" (click)="showSection('consoles')">Listar Plataformas</a></li>
       <li><a href="#" (click)="showSection('pedidos')">Listar Pedidos</a></li>
     </ul>
