@@ -9,9 +9,9 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  showSignUp = false; // Inicialmente mostra o formulário de login
+  showSignUp = false;
 
   toggleForms() {
-    this.showSignUp = !this.showSignUp; // Alterna entre login e signup
+    this.showSignUp = !this.showSignUp; 
   }
 }
