@@ -201,14 +201,14 @@ form .switch-group .switch-label {
 }
 
 .check {
-  display: flex; /* Alinha os itens na horizontal */
-  align-items: center; /* Centraliza os itens verticalmente */
-  margin-bottom: 10px; /* Espaçamento entre cada linha de checkboxes */
+  display: flex; 
+  align-items: center; 
+  margin-bottom: 10px; 
 }
 
 .check input[type="checkbox"] {
-  transform: scale(1.5); /* Aumenta o tamanho do checkbox */
-  margin-right: 15px; /* Espaçamento entre o checkbox e o texto */
+  transform: scale(1.5);
+  margin-right: 15px; 
 }
 
 

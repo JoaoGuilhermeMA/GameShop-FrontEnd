@@ -6,13 +6,15 @@ import {Router} from "@angular/router";
 import Swal from "sweetalert2";
 import {Plataforma} from "../../models/plataforma";
 import {PlataformaService} from "../../services/plataforma.service";
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-plataform-form',
   standalone: true,
     imports: [
         FormsModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        RouterModule 
     ],
   templateUrl: './plataform-form.component.html',
   styleUrl: './plataform-form.component.css'

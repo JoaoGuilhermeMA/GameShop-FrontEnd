@@ -7,11 +7,12 @@ import {FormsModule} from "@angular/forms";
 import {Router} from "@angular/router";
 import {CategoriaService} from "../../services/categoria.service";
 import {PlataformaService} from "../../services/plataforma.service";
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-jogo-form',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule , RouterModule],
   templateUrl: './jogo-form.component.html',
   styleUrl: './jogo-form.component.css'
 })
