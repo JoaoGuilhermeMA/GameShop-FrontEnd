@@ -10,6 +10,8 @@ import {ConsoleFormComponent} from "./components/console-form/console-form.compo
 import { ListaJogosComponent } from './components/lista-jogos/lista-jogos.component';
 import {PlataformFormComponent} from "./components/plataform-form/plataform-form.component";
 import { CategoriaFormComponent } from './components/categoria-form/categoria-form.component';
+import { ListaCategoriasComponent } from './components/lista-categorias/lista-categorias.component';
+import { ListaPlataformaComponent } from './components/lista-plataforma/lista-plataforma.component';
 
 export const routes: Routes = [
   { path: 'produtos', component: ViewProdutoComponent },
@@ -23,6 +25,8 @@ export const routes: Routes = [
   { path: 'admin', component: AdminComponent},
   { path: 'carrinho', component: CarrinhoComponent},
   { path: 'jogos', component: JogoFormComponent},
-  { path: 'lista', component: ListaJogosComponent},
+  { path: 'listaJogos', component: ListaJogosComponent},
+  { path: 'listaCategorias', component: ListaCategoriasComponent},
+  { path: 'listaPlataformas', component: ListaPlataformaComponent},
   { path: '', redirectTo: 'produtos', pathMatch: "full" }
 ];

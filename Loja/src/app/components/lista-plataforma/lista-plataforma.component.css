@@ -20,11 +20,10 @@
 .header h1 {
     margin: 0; 
     font-size: 35px;
-    margin-left: 8em;
+    margin-left: 7.5em;
     margin-bottom: 20px;
     color: #333;
 }
-
 
 table {
     width: 100%;
@@ -51,7 +50,7 @@ td {
 
 .button-group {
     display: flex;
-    gap: 10px; /* Espaço entre os botões */
+    gap: 10px; 
 }
 
 .excluir-btn {
