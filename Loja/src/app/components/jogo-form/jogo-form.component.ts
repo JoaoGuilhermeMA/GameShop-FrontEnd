@@ -46,7 +46,7 @@ export class JogoFormComponent {
     { id: 21, categoriasJogo: 'MMO' },
     { id: 22, categoriasJogo: 'FPS' }
   ];
-  
+
 
   jogoService = inject(JogoService);
   categoriaService = inject(CategoriaService);
@@ -95,7 +95,7 @@ export class JogoFormComponent {
         Swal.fire({
           title: mensagem,
           icon: 'success',
-          confirmButtonText: ''
+          confirmButtonText: 'Ok'
         });
         this.jogoService.updateJogos();
         this.router.navigate(['produto']);

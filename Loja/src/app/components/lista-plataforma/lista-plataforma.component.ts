@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';  // Adicionei isso
 import { Plataforma } from "../../models/plataforma";
 import { PlataformaService } from "../../services/plataforma.service";
+import Swal from "sweetalert2";
 
 @Component({
   selector: 'app-lista-plataforma',
@@ -39,12 +40,24 @@ export class ListaPlataformaComponent {
     this.plataformaService.deleteByid(idPlataforma).subscribe({
       next: value => {
         this.plataformas = this.plataformas.filter(plataforma => plataforma.id !== idPlataforma);
-        console.log('Plataforma excluída com sucesso!'); // Usando console.log em vez de alert
+        Swal.fire({
+          title: value,
+          icon: 'success',
+          confirmButtonText: 'Ok'
+        });
       },
       error: err => {
-        console.error("Erro ao excluir plataforma: ", err); // Usando console.error em vez de alert
+        console.error("Erro ao excluir plataforma: ", err);
       }
     });
   }
 
+  // editarPlataforma(plataforma: Plataforma ,idPlataforma: number){
+  //   console.log(idPlataforma, plataforma);
+  //   this.plataformaService.update(plataforma, idPlataforma).subscribe({
+  //     next: value => {
+  //
+  //     }
+  //   })
+  // }
 }
