@@ -12,6 +12,7 @@ import {PlataformFormComponent} from "./components/plataform-form/plataform-form
 import { CategoriaFormComponent } from './components/categoria-form/categoria-form.component';
 import { ListaCategoriasComponent } from './components/lista-categorias/lista-categorias.component';
 import { ListaPlataformaComponent } from './components/lista-plataforma/lista-plataforma.component';
+import { EditPlataformaComponent } from './components/edit-plataforma/edit-plataforma.component';
 
 export const routes: Routes = [
   { path: 'produtos', component: ViewProdutoComponent },
@@ -28,5 +29,6 @@ export const routes: Routes = [
   { path: 'listaJogos', component: ListaJogosComponent},
   { path: 'listaCategorias', component: ListaCategoriasComponent},
   { path: 'listaPlataformas', component: ListaPlataformaComponent},
+  { path: 'editarPlataformas', component: EditPlataformaComponent},
   { path: '', redirectTo: 'produtos', pathMatch: "full" }
 ];

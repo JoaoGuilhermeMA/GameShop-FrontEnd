@@ -41,12 +41,12 @@ header h2 {
 
 .cancel-button {
   background-color: #ffffff;
-  color: limegreen;
-  border: 3px solid limegreen;
+  color: #1a69c1;
+  border: 3px solid #1a69c1;
 }
 
 .save-button {
-  background-color: #28a745;
+  background-color: #1a69c1;
   color: white;
 }
 
