@@ -23,7 +23,7 @@
       <td>{{ plataforma.parceira }}</td>
       <td>
         <div class="button-group">
-          <button class="edit-btn">Editar</button>
+          <button class="edit-btn"><a [routerLink]="['/editarPlataformas']">Editar</a></button>
           <button class="excluir-btn" (click)="deletePlataforma(plataforma.id)">Excluir</button>
         </div>
       </td>

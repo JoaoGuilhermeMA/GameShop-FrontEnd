@@ -80,3 +80,8 @@ td {
 .edit-btn:hover {
     background-color: #3366ff;
 }
+
+button a {
+    color: #ffffff;
+    text-decoration: none;
+}
