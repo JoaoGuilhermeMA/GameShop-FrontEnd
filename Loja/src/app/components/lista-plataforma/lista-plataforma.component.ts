@@ -35,6 +35,7 @@ export class ListaPlataformaComponent {
   }
 
   deletePlataforma(idPlataforma: number) {
+    console.log(idPlataforma);
     this.plataformaService.deleteByid(idPlataforma).subscribe({
       next: value => {
         this.plataformas = this.plataformas.filter(plataforma => plataforma.id !== idPlataforma);
