@@ -14,7 +14,7 @@ import { RouterModule } from '@angular/router';
     imports: [
         FormsModule,
         ReactiveFormsModule,
-        RouterModule 
+        RouterModule
     ],
   templateUrl: './plataform-form.component.html',
   styleUrl: './plataform-form.component.css'
@@ -37,7 +37,7 @@ export class PlataformFormComponent {
           title: 'Error!',
           text: 'Jogo não existente!',
           icon: 'error',
-          confirmButtonText: 'Cool'
+          confirmButtonText: 'Entendi'
         })
       }
     })
@@ -48,10 +48,10 @@ export class PlataformFormComponent {
         Swal.fire({
           title: mensagem,
           icon: 'success',
-          confirmButtonText: ''
+          confirmButtonText: 'Ok'
         });
         this.plataformaService.updateJogos();
-        this.router.navigate(['produtos']);
+        this.router.navigate(['admin']);
         this.retorno.emit();
       },
       error: err => {

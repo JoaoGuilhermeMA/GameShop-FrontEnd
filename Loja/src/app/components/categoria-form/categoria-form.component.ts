@@ -45,10 +45,10 @@ export class CategoriaFormComponent {
         Swal.fire({
           title: mensagem,
           icon: 'success',
-          confirmButtonText: ''
+          confirmButtonText: 'Ok'
         });
         this.categoriaService.updateJogos();
-        this.router.navigate(['produto']);
+        this.router.navigate(['admin']);
         this.retorno.emit();
       },
       error: err => {

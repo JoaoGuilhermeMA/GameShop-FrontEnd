@@ -1,31 +1,33 @@
 <div class="container">
-    <div class="header">
-        <a [routerLink]="['/admin']">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
-            </svg>
-        </a>
-        <h1>Lista de Plataformas</h1>
-    </div>
-    <table>
-        <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Descrição</th>
-                <th>Ação</th>
-            </tr>
-        </thead>
-        <tbody id="cateList">
-            <tr>
-                <td>Steam</td>
-                <td>Uma plataforma de distribuição digital desenvolvida pela Valve, oferecendo uma ampla biblioteca de jogos para PC, Mac, e Linux.</td>
-                <td>
-                    <div class="button-group">
-                        <button class="edit-btn">Editar</button>
-                        <button class="excluir-btn">Excluir</button>
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+  <div class="header">
+    <a [routerLink]="['/admin']">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+      </svg>
+    </a>
+    <h1>Lista de Plataformas</h1>
+  </div>
+  <table>
+    <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Tipo</th>
+      <th>Parceira</th>
+      <th>Ação</th>
+    </tr>
+    </thead>
+    <tbody id="cateList">
+    <tr *ngFor="let plataforma of plataformas">
+      <td>{{ plataforma.nome }}</td>
+      <td>{{ plataforma.tipo }}</td>
+      <td>{{ plataforma.parceira }}</td>
+      <td>
+        <div class="button-group">
+          <button class="edit-btn">Editar</button>
+          <button class="excluir-btn" (click)="deletePlataforma(plataforma.id)">Excluir</button>
+        </div>
+      </td>
+    </tr>
+    </tbody>
+  </table>
 </div>
